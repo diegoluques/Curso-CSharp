@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A4EDBD31-BAE3-4EF2-8338-449AD47359A0}</ProjectGuid>
+    <ProjectGuid>{7A52FA35-2B45-4A9B-B087-B55AB8263328}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_2_CriandoVariaveis</RootNamespace>
-    <AssemblyName>2-CriandoVariaveis</AssemblyName>
+    <RootNamespace>_3_CriandoVariaveisPontoFlutuante</RootNamespace>
+    <AssemblyName>3-CriandoVariaveisPontoFlutuante</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

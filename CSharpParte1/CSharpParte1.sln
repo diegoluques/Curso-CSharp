@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11-CalculaPoupanca", "P11-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12-CalculaInvestimentoLongoPrazo", "P12-CalculaInvestimentoLongoPrazo\P12-CalculaInvestimentoLongoPrazo.csproj", "{591AB75A-DE59-430B-BD22-42EB884EFAE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P13-ForEncadeado", "P13-ForEncadeado\P13-ForEncadeado.csproj", "{41916098-7E00-4348-AE96-98C6C3782974}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{591AB75A-DE59-430B-BD22-42EB884EFAE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{591AB75A-DE59-430B-BD22-42EB884EFAE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{591AB75A-DE59-430B-BD22-42EB884EFAE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41916098-7E00-4348-AE96-98C6C3782974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41916098-7E00-4348-AE96-98C6C3782974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41916098-7E00-4348-AE96-98C6C3782974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41916098-7E00-4348-AE96-98C6C3782974}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

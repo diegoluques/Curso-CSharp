@@ -10,7 +10,7 @@ namespace P14_DesafioMultiplosDeTres
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Executando o projeto P14 - Multíplos de 3");
+            Console.WriteLine("Executando o projeto P14 - Múltiplos de 3");
 
             for (int numero = 1; numero < 100; numero++)
             {

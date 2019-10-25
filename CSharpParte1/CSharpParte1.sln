@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P13-ForEncadeado", "P13-For
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P14-DesafioMultiplosDeTres", "P14-DesafioMultiplosDeTres\P14-DesafioMultiplosDeTres.csproj", "{704F9B1B-BD67-4871-8A66-771C4CDC1CAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P15-DesafioFatorial", "P14-DesafioFatorial\P15-DesafioFatorial.csproj", "{AB2D9B6B-5426-4E5B-B661-4945F9F3090F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{704F9B1B-BD67-4871-8A66-771C4CDC1CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{704F9B1B-BD67-4871-8A66-771C4CDC1CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{704F9B1B-BD67-4871-8A66-771C4CDC1CAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB2D9B6B-5426-4E5B-B661-4945F9F3090F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2D9B6B-5426-4E5B-B661-4945F9F3090F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2D9B6B-5426-4E5B-B661-4945F9F3090F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2D9B6B-5426-4E5B-B661-4945F9F3090F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

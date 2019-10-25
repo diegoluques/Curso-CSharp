@@ -10,6 +10,8 @@ namespace _8_Condicionas2
     {
         static void Main(string[] args)
         {
+            //OR - ||
+            //AND - &&
             Console.WriteLine("Executando o projeto 7 - Condicionais");
 
             int idadeJoao = 16;

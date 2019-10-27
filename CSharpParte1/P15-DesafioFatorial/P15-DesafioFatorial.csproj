@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{AB2D9B6B-5426-4E5B-B661-4945F9F3090F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>P14_DesafioFatorial</RootNamespace>
-    <AssemblyName>P14-DesafioFatorial</AssemblyName>
+    <RootNamespace>P15_DesafioFatorial</RootNamespace>
+    <AssemblyName>P15-DesafioFatorial</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -1,7 +1,7 @@
 # Curso-CSharp
 Curso de CSharp Parte 1 da Alura
 
-# Este curso abordou os seguintes tópicos:
+# Tópicos abordados:
 - História e ecossistema da linguagem
 - Nosso primeiro programa e o Visual Studio
 - Variáveis numéricas

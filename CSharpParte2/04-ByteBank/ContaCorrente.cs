@@ -1,7 +1,7 @@
 ﻿
 public class ContaCorrente
 {
-    public string tirular;
+    public string titular;
     public int agencia;
     public int numero;
     public double saldo = 100.00;
@@ -10,14 +10,12 @@ public class ContaCorrente
     //bool retorna true ou false
     public bool Sacar(double valor)
     {
-        if(this.saldo < valor)
+        if (this.saldo < valor)
         {
             return false;
-        } else
-        {
-            this.saldo -= valor;
-            return true;
         }
+        this.saldo -= valor;
+        return true;
     }
 
     //Quando não retorna um valor, chama-se de método
@@ -25,6 +23,17 @@ public class ContaCorrente
     public void Depositar(double valorDepositado)
     {
         this.saldo += valorDepositado;
+    }
+
+    public bool Transferir(double valorTransferencia, ContaCorrente contaDestino)
+    {
+        if (this.saldo < valorTransferencia)
+        {
+            return false;
+        }
+        this.saldo -= valorTransferencia;
+        contaDestino.Depositar(valorTransferencia);
+        return true;
     }
 
 }

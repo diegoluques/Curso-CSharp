@@ -6,13 +6,16 @@ namespace _07_ByteBank
         public Cliente Titular { get; set; }
         public int Agencia { get; set; }
         public int Numero { get; set; }
+        public static int TotalDeContasCriadas { get; private set; }
 
         private double _saldo = 100.00;
 
-        public ContaCorrente (int agencia, int numero)
+        public ContaCorrente(int agencia, int numero)
         {
             Agencia = agencia;
             Numero = numero;
+
+            TotalDeContasCriadas++;
         }
 
         public double Saldo

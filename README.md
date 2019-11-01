@@ -1,7 +1,7 @@
-# Curso-CSharp
-Curso de CSharp da Alura
+## Curso-CSharp
+Curso de CSharp da Alura, abaixo os tópicos abordados por curso finalizado.
 
-# C# Parte 1: Primeiros Passos - Tópicos abordados:
+## C# Parte 1: Primeiros Passos
 - História e ecossistema da linguagem
 - Nosso primeiro programa e o Visual Studio
 - Variáveis numéricas
@@ -9,7 +9,7 @@ Curso de CSharp da Alura
 - Controle de fluxo com IF
 - Controle de fluxo com laços de repetição
 
-# C# Parte 2: Introdução à Orientação a Objetos - Tópicos abordados:
+## C# Parte 2: Introdução à Orientação a Objetos
 - Nossa primeira classe
 - Tipos
 - Comportamentos de classes

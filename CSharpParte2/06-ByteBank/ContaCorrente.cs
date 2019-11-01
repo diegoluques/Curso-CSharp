@@ -3,34 +3,37 @@ namespace _06_ByteBank
 {
     public class ContaCorrente
     {
-        public Cliente titular;
+        public Cliente Titular { get; set; } 
         public int agencia;
         public int numero;
-        private double saldo = 100.00;
+        private double _saldo = 100.00;
 
-        public void DefinirSaldo(double saldo)
+        public double Saldo
         {
-            if (saldo < 0)
+            get
             {
-                return;
+                return this._saldo;
             }
-            this.saldo = saldo;
-        }
+            set
+            {
+                if (value < 0)
+                {
+                    return;
+                }
 
-        public double ObterSaldo()
-        {
-            return this.saldo;
+                this._saldo = value;
+            }
         }
 
         //Quando retorna um valor, comum chamar de função, mas pode ser chamado de método também
         //bool retorna true ou false
         public bool Sacar(double valor)
         {
-            if (this.saldo < valor)
+            if (this._saldo < valor)
             {
                 return false;
             }
-            this.saldo -= valor;
+            this._saldo -= valor;
             return true;
         }
 
@@ -38,16 +41,16 @@ namespace _06_ByteBank
         //void não retorna nenhum valor
         public void Depositar(double valorDepositado)
         {
-            this.saldo += valorDepositado;
+            this._saldo += valorDepositado;
         }
 
         public bool Transferir(double valorTransferencia, ContaCorrente contaDestino)
         {
-            if (this.saldo < valorTransferencia)
+            if (this._saldo < valorTransferencia)
             {
                 return false;
             }
-            this.saldo -= valorTransferencia;
+            this._saldo -= valorTransferencia;
             contaDestino.Depositar(valorTransferencia);
             return true;
         }

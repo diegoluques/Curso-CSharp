@@ -11,8 +11,7 @@ namespace ByteBank
     {
         static void Main(string[] args)
         {
-
-            Funcionario carlos = new Funcionario(1);
+            Funcionario carlos = new Funcionario(0);
 
             carlos.Nome = "Carlos";
             carlos.CPF = "000.000.000-00";

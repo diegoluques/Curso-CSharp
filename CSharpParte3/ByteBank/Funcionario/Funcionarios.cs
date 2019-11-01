@@ -12,24 +12,23 @@ namespace ByteBank.Funcionarios
         // 1 - Diretor
         // 2 - Designer
         // N - ...
-        public int _tipo;
+        private int _tipoFuncionario;
 
         public string Nome { get; set; }
         public string CPF { get; set; }
         public double Salario { get; set; }
 
-        public Funcionario(int tipoFuncionario)
+        public Funcionario(int tipo)
         {
-            _tipo = tipoFuncionario;
+            _tipoFuncionario = tipo;
         }
 
         public double GetBonificacao()
         {
-            if(_tipo == 0)
-                return Salario * 0.10;
+            if (_tipoFuncionario == 0)
+                return Salario;
 
             return Salario * 0.10;
         }
-
     }
 }

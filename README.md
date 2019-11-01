@@ -2,7 +2,7 @@
 Curso de CSharp da Alura, abaixo os tópicos abordados por curso finalizado.
 
 ## C# Parte 1: Primeiros Passos
-- História e ecossistema da linguagem
+- História e ecosistema da linguagem
 - Nosso primeiro programa e o Visual Studio
 - Variáveis numéricas
 - Variáveis de texto
@@ -13,6 +13,6 @@ Curso de CSharp da Alura, abaixo os tópicos abordados por curso finalizado.
 - Nossa primeira classe
 - Tipos
 - Comportamentos de classes
-- Namespace composição e null
+- Namespace, composição e null
 - Propriedades
 - Construtores e membros estáticos

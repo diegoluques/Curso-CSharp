@@ -25,15 +25,15 @@ namespace ByteBank
             
             Console.WriteLine("");
 
-            Diretor diego = new Diretor();
-            diego.Nome = "Diego";
-            diego.CPF = "000.000.000-01";
-            diego.Salario = 5000;
+            Diretor roberta = new Diretor();
+            roberta.Nome = "Diego";
+            roberta.CPF = "000.000.000-01";
+            roberta.Salario = 5000;
 
-            gerenciador.Registrar(diego);
+            gerenciador.Registrar(roberta);
 
-            Console.WriteLine(diego.Nome);
-            Console.WriteLine(diego.GetBonificacao());
+            Console.WriteLine(roberta.Nome);
+            Console.WriteLine(roberta.GetBonificacao());
 
             Console.WriteLine("");
 

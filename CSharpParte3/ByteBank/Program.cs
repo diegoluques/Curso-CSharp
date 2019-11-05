@@ -30,6 +30,13 @@ namespace ByteBank
             roberta.CPF = "000.000.000-01";
             roberta.Salario = 5000;
 
+            Funcionario robertaTeste = roberta;
+
+            Console.WriteLine("Bonificação de uma referência de Diretor: " + roberta.GetBonificacao());
+            Console.WriteLine("Bonificação de uma referência de Funcionário: " + robertaTeste.GetBonificacao());
+
+            Console.WriteLine("");
+
             gerenciador.Registrar(roberta);
 
             Console.WriteLine(roberta.Nome);

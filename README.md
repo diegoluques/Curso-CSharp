@@ -16,3 +16,10 @@ Curso de CSharp da Alura, abaixo os tópicos abordados por curso finalizado.
 - Namespace, composição e null
 - Propriedades
 - Construtores e membros estáticos
+
+## C# parte 3: Entendendo herança e interface
+- Conhecendo o problema do cliente
+- Herança
+- Construtores e protected
+- Mais herança e herança múltipla
+- Interfaces

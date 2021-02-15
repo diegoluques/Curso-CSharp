@@ -9,56 +9,43 @@ namespace ByteBank
 		private static void Main()
 		{
 			Console.WriteLine(RetornarString());
-			Console.WriteLine("-");
 
-			GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
+			CalcularBonificacao();
 
-			Funcionario carlos = new Funcionario(2000, "000.000.000-00")
+			Console.WriteLine(RetornarString());
+			Console.ReadLine();
+		}
+
+		public static void CalcularBonificacao()
+		{
+			GerenciadorBonificacao gerenciadorBonificacao = new GerenciadorBonificacao();
+
+			Designer pedro = new Designer("000.000.001-11")
 			{
-				Nome = "Carlos"
+				Nome = "Pedro"
 			};
-			carlos.AumentarSalario();
-			Console.WriteLine("Novo Salário: " + carlos.Salario);
 
-			Console.WriteLine("-");
-			Console.WriteLine("Total de Funcionários: " + Funcionario.TotalDeFuncionarios);
-			Console.WriteLine("-");
-
-			gerenciador.Registrar(carlos);
-
-			Console.WriteLine(carlos.Nome);
-			Console.WriteLine(carlos.GetBonificacao());
-
-			Console.WriteLine("-");
-
-			Diretor roberta = new Diretor(5000, "000.000.000 - 02")
+			Diretor roberta = new Diretor("000.000.002-22")
 			{
 				Nome = "Roberta"
 			};
-			roberta.AumentarSalario();
-			Console.WriteLine("Novo Salário: " + roberta.Salario);
 
-			Console.WriteLine("-");
-			Console.WriteLine("Total de Funcionários: " + Funcionario.TotalDeFuncionarios);
-			Console.WriteLine("-");
+			Auxiliar igor = new Auxiliar("000.000.003-33")
+			{
+				Nome = "Igor"
+			};
 
-			Funcionario robertaTeste = roberta;
+			GerenteDeConta camila = new GerenteDeConta("000.000.004-44")
+			{
+				Nome = "Camila"
+			};
 
-			Console.WriteLine("Bonificação de uma referência de Diretor: " + roberta.GetBonificacao());
-			Console.WriteLine("Bonificação de uma referência de Funcionário: " + robertaTeste.GetBonificacao());
+			gerenciadorBonificacao.Registrar(pedro);
+			gerenciadorBonificacao.Registrar(roberta);
+			gerenciadorBonificacao.Registrar(igor);
+			gerenciadorBonificacao.Registrar(camila);
 
-			Console.WriteLine("-");
-
-			gerenciador.Registrar(roberta);
-
-			Console.WriteLine(roberta.Nome);
-			Console.WriteLine(roberta.GetBonificacao());
-
-			Console.WriteLine("-");
-			Console.WriteLine("Total de bonificações: R$ " + gerenciador.GetTotalBonificacao());
-			Console.WriteLine("-");
-			Console.WriteLine(RetornarString());
-			Console.ReadLine();
+			Console.WriteLine("Total de bonificação do mês: " +gerenciadorBonificacao.GetTotalBonificacao());
 		}
 
 		private static string RetornarString()

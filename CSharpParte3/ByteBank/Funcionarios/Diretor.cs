@@ -4,9 +4,8 @@ namespace ByteBank.Funcionarios
 {
 	public class Diretor : Funcionario
 	{
-		public Diretor(double salario, string cpf) : base(salario, cpf)
+		public Diretor(string cpf) : base(5000, cpf)
 		{
-			Console.WriteLine("Criando um Diretor");
 		}
 
 		public override void AumentarSalario()
@@ -16,7 +15,7 @@ namespace ByteBank.Funcionarios
 
 		public override double GetBonificacao()
 		{
-			return Salario + base.GetBonificacao();
+			return Salario * 0.50;
 		}
 	}
 }

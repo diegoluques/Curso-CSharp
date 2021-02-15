@@ -2,7 +2,7 @@
 
 namespace ByteBank.Funcionarios
 {
-	public class Funcionario
+	public abstract class Funcionario
 	{
 		public static int TotalDeFuncionarios { get; private set; }
 		public string Nome { get; set; }
@@ -13,9 +13,6 @@ namespace ByteBank.Funcionarios
 		{
 			CPF = cpf;
 			Salario = salario;
-
-			Console.WriteLine("Criando um Funcionário");
-			TotalDeFuncionarios++;
 		}
 
 		public virtual double GetBonificacao()

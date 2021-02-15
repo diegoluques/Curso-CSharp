@@ -1,4 +1,5 @@
 ﻿using ByteBank.Funcionarios;
+using System;
 
 namespace ByteBank
 {
@@ -14,6 +15,11 @@ namespace ByteBank
 		public double GetTotalBonificacao()
 		{
 			return _totalBonificacao;
+		}
+
+		internal static void Registrar()
+		{
+			throw new NotImplementedException();
 		}
 	}
 }

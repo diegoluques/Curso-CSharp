@@ -24,5 +24,6 @@ namespace ByteBank.Funcionarios
 		{
 			Salario *= 1.1;
 		}
+
 	}
 }

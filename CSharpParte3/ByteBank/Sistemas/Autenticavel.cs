@@ -1,18 +1,7 @@
-﻿using ByteBank.Funcionarios;
-
-namespace ByteBank.Sistemas
+﻿namespace ByteBank.Sistemas
 {
-	public abstract class Autenticavel : Funcionario
+	public interface IAutenticavel
 	{
-		public Autenticavel(double salario, string cpf) : base(salario, cpf)
-		{
-		}
-
-		public string Senha { get; set; }
-
-		public bool Autenticar(string senha)
-		{
-			return (Senha == senha);
-		}
+		bool Autenticar(string senha);
 	}
 }

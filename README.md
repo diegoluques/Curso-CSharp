@@ -1,5 +1,5 @@
 ## Curso-CSharp
-Curso de CSharp da Alura, abaixo os tópicos abordados por curso finalizado.
+Curso de C# e Orientação a Objetos da Alura, abaixo os tópicos abordados por curso finalizado.
 
 ## C# Parte 1: Primeiros Passos
 - História e ecosistema da linguagem

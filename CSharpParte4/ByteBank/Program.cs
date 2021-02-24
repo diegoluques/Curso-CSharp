@@ -11,44 +11,46 @@ namespace ByteBank
 				//Metodo();
 				CriarContaCorrente();
 			}
-			catch (DivideByZeroException)
-			{
-				Console.WriteLine("Não é possível divisão por zero!");
-			}
-			catch (ArgumentException ex)
-			{
-				Console.WriteLine("Argumento com problema: " + ex.ParamName);
-				Console.WriteLine(ex.Message);
-			}
-			catch (SaldoInsuficienteException ex)
-			{
-				Console.WriteLine(ex.Message);
-				Console.WriteLine("");
-				Console.WriteLine(ex.StackTrace);
-				Console.WriteLine("");
-				Console.WriteLine("Exceção do tipo SaldoInsuficienteException");
-			}
 			catch (Exception e)
 			{
 				Console.WriteLine(e.Message);
 				Console.WriteLine(e.StackTrace);
-				Console.WriteLine("Aconteceu um erro!");
 			}
+			//catch (DivideByZeroException)
+			//{
+			//	Console.WriteLine("Não é possível divisão por zero!");
+			//}
+			//catch (ArgumentException ex)
+			//{
+			//	Console.WriteLine("Argumento com problema: " + ex.ParamName);
+			//	Console.WriteLine(ex.Message);
+			//}
+			//catch (SaldoInsuficienteException ex)
+			//{
+			//	Console.WriteLine(ex.Message);
+			//	Console.WriteLine("");
+			//	Console.WriteLine(ex.StackTrace);
+			//	Console.WriteLine("");
+			//	Console.WriteLine("Exceção do tipo SaldoInsuficienteException");
+			//}
+			//catch (Exception e)
+			//{
+			//	Console.WriteLine(e.Message);
+			//	Console.WriteLine(e.StackTrace);
+			//	Console.WriteLine("Aconteceu um erro!");
+			//}
 
 			Console.ReadLine();
 		}
 
 		private static void CriarContaCorrente()
 		{
-			ContaCorrente contaCorrente = new ContaCorrente(400, 5006);
-			ContaCorrente contaDestino = new ContaCorrente(400, 5006);
+			ContaCorrente conta1 = new ContaCorrente(4055, 478663);
+			ContaCorrente conta2 = new ContaCorrente(5566, 256698);
 
-			contaDestino.Transferir(200, contaCorrente);
+			//conta1.Transferir(5000, conta2);
+			conta1.Sacar(500);
 
-			contaCorrente.Depositar(0);
-			Console.WriteLine("Saldo da conta R$ " + contaCorrente.Saldo);
-			Console.WriteLine("");
-			contaCorrente.Sacar(600);
 		}
 
 		private static void Metodo()

@@ -12,15 +12,15 @@ namespace ByteBank
 
 		public int Numero { get; }
 
-		private double _saldo = 100;
+		private double _saldo = 0;
 
 		public ContaCorrente(int agencia, int numero)
 		{
 			if (agencia <= 0)
-				throw new ArgumentException("Atenção! Agência deve ser maior que zero");
+				throw new ArgumentException("Atenção! Agência deve ser maior que zero", nameof(agencia));
 
 			if (numero <= 0)
-				throw new ArgumentException("Atenção! Número deve ser maior que zero");
+				throw new ArgumentException("Atenção! Número deve ser maior que zero", nameof(numero));
 
 			Agencia = agencia;
 			Numero = numero;
@@ -45,17 +45,15 @@ namespace ByteBank
 			}
 		}
 
-
-
-		public bool Sacar(double valor)
+		public void Sacar(double valor)
 		{
+			if (valor < 0)
+				throw new ArgumentException("Ops! Valor do saque não pode ser menor que 0.", nameof(valor));
+
 			if (_saldo < valor)
-			{
-				return false;
-			}
+				throw new SaldoInsuficienteException(Saldo, valor);
 
 			_saldo -= valor;
-			return true;
 		}
 
 		public void Depositar(double valor)
@@ -63,16 +61,13 @@ namespace ByteBank
 			_saldo += valor;
 		}
 
-		public bool Transferir(double valor, ContaCorrente contaDestino)
+		public void Transferir(double valor, ContaCorrente contaDestino)
 		{
-			if (_saldo < valor)
-			{
-				return false;
-			}
+			if (valor < 0)
+				throw new ArgumentException("Ops! Valor da transferência não pode ser menor que 0.", nameof(valor));
 
-			_saldo -= valor;
+			Sacar(valor);
 			contaDestino.Depositar(valor);
-			return true;
 		}
 	}
 }

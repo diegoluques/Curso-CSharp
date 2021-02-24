@@ -6,6 +6,9 @@ namespace ByteBank
 	{
 		public Cliente Titular { get; set; }
 
+		public int ContadorSaquesNaoPermitido { get; private set; }
+		public int TransferenciasNaoPermitidas { get; private set; }
+
 		public static int TotalDeContasCriadas { get; private set; }
 
 		public int Agencia { get; }
@@ -51,7 +54,10 @@ namespace ByteBank
 				throw new ArgumentException("Ops! Valor do saque não pode ser menor que 0.", nameof(valor));
 
 			if (_saldo < valor)
+			{
+				ContadorSaquesNaoPermitido++;
 				throw new SaldoInsuficienteException(Saldo, valor);
+			}
 
 			_saldo -= valor;
 		}
@@ -66,7 +72,16 @@ namespace ByteBank
 			if (valor < 0)
 				throw new ArgumentException("Ops! Valor da transferência não pode ser menor que 0.", nameof(valor));
 
-			Sacar(valor);
+			try
+			{
+				Sacar(valor);
+			}
+			catch (SaldoInsuficienteException)
+			{
+				TransferenciasNaoPermitidas++;
+				throw;
+			}
+
 			contaDestino.Depositar(valor);
 		}
 	}

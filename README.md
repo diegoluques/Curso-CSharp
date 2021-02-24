@@ -23,3 +23,10 @@ Curso de CSharp da Alura, abaixo os tópicos abordados por curso finalizado.
 - Construtores e protected
 - Mais herança e herança múltipla
 - Interfaces
+
+## C# parte 4: Entendendo exceções
+- Conheça a pilha de chamadas
+- Entenda o tratamento de exceções
+- Crie suas próprias exceções
+- Use o bloco try/catch/finally e using
+- Entenda a interface IDisposable

@@ -9,7 +9,8 @@ namespace ByteBank
 			try
 			{
 				//Metodo();
-				CriarContaCorrente();
+				//CriarContaCorrente();
+				CarregarContas();
 			}
 			catch (Exception e)
 			{
@@ -41,6 +42,16 @@ namespace ByteBank
 			//}
 
 			Console.ReadLine();
+		}
+
+		private static void CarregarContas()
+		{
+			using (LeitorDeArquivo leitor = new LeitorDeArquivo("contas.txt"))
+			{
+				leitor.LerProximaLinha();
+				leitor.LerProximaLinha();
+				leitor.LerProximaLinha();
+			}
 		}
 
 		private static void CriarContaCorrente()

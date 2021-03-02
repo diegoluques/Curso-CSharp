@@ -30,3 +30,10 @@ Curso de C# e Orientação a Objetos da Alura, abaixo os tópicos abordados por 
 - Crie suas próprias exceções
 - Use o bloco try/catch/finally e using
 - Entenda a interface IDisposable
+
+## C# PARTE 5: BIBLIOTECAS DLLS, DOCUMENTAÇÃO E USANDO O NUGET
+- Projeto de biblioteca
+- Modificadores de acesso em bibliotecas
+- Referencia de DLL
+- Documentando
+- NuGet

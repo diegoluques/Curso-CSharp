@@ -20,8 +20,11 @@ namespace ByteBank.SistemaAgencia
 
 		public string ObterValoresDosAgumentos(string nomeDoParametro)
 		{
+			nomeDoParametro = nomeDoParametro.ToUpper();
+			string argumentoToUpper = _argumentos.ToUpper();
+
 			string termo = nomeDoParametro + "=";
-			int indiceParametro = _argumentos.IndexOf(termo);
+			int indiceParametro = argumentoToUpper.IndexOf(termo);
 
 			string resultado = _argumentos.Substring(indiceParametro + termo.Length);
 			int indiceEcomercial = resultado.IndexOf('&');

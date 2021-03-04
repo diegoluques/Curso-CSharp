@@ -21,7 +21,8 @@ namespace ByteBank.SistemaAgencia
 			//TrocarValoresDeDuasVariaveis(5, 7);
 			//LerUmNumeroInteiroERetornarNotasPossiveis(576);
 
-			string urlParametros = "https:www.bytebank.com.br/cambio?moedaOrigem=real&moedaDestino=dolar";
+			string urlParametros = "https://www.bytebank.com.br/cambio?moedaOrigem=real&moedaDestino=dolar";
+			string urlTeste = "https://www.bytebank.com.br/cambio";
 			ExtratorValorDeArgumentosUrl extratorValorDeArgumentosUrl = new ExtratorValorDeArgumentosUrl(urlParametros);
 
 			string valor2 = extratorValorDeArgumentosUrl.ObterValoresDosAgumentos("moedaOrigem");
@@ -29,6 +30,12 @@ namespace ByteBank.SistemaAgencia
 
 			string valor = extratorValorDeArgumentosUrl.ObterValoresDosAgumentos("moedaDestino");
 			Console.WriteLine("Valor de moedaDestino: " + valor);
+
+			Console.WriteLine("");
+
+			Console.WriteLine(urlTeste.StartsWith("https://www.bytebank.com"));
+			Console.WriteLine(urlTeste.EndsWith("cambio"));
+			Console.WriteLine(urlTeste.Contains("bytebank"));
 
 			Console.WriteLine("");
 			Console.ReadLine();

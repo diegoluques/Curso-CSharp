@@ -38,9 +38,23 @@ namespace ByteBank.SistemaAgencia
 			//Console.WriteLine(urlTeste.EndsWith("cambio"));
 			//Console.WriteLine(urlTeste.Contains("bytebank"));
 
-			ContaCorrente contaCorrente = new ContaCorrente(2525, 3669);
+			//ContaCorrente contaCorrente = new ContaCorrente(2525, 3669);
+			//Console.WriteLine(contaCorrente);
 
-			Console.WriteLine(contaCorrente);
+			Cliente cliente1 = new Cliente
+			{
+				Nome = "Diego Luques"
+			};
+
+			Cliente cliente2 = new Cliente
+			{
+				Nome = "Diego Luques"
+			};
+
+			if (cliente1.Equals(cliente2))
+			{
+				Console.WriteLine("São iguais");
+			}
 
 			Console.WriteLine("");
 			Console.ReadLine();

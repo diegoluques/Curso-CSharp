@@ -14,6 +14,16 @@ namespace ByteBank.SistemaAgencia
 			idades[3] = 50;
 			idades[4] = 28;
 
+			int acumulador = 0;
+			for (int indice = 0; indice <= idades.Length; indice++)
+			{
+				int idade = idades[indice];
+				Console.WriteLine($"Acessando o array idades no índice {indice}");
+				Console.WriteLine($"Valor de idades [{indice}] = {idade}");
+				acumulador++;
+			}
+
+			int media = (acumulador / idades.Length);
 
 			Console.WriteLine(idades[4]);
 

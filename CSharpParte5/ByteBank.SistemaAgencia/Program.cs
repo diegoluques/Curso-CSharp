@@ -1,4 +1,5 @@
-﻿using Humanizer;
+﻿using ByteBank.Modelos;
+using Humanizer;
 using System;
 
 namespace ByteBank.SistemaAgencia
@@ -7,10 +8,10 @@ namespace ByteBank.SistemaAgencia
 	{
 		static void Main(string[] args)
 		{
-			DateTime dataFimPagamento = new DateTime(2021, 3, 3);
-			DateTime dataCorrente = DateTime.Now;
+			//DateTime dataFimPagamento = new DateTime(2021, 3, 3);
+			//DateTime dataCorrente = DateTime.Now;
 
-			TimeSpan diferenca = dataFimPagamento - dataCorrente;
+			//TimeSpan diferenca = dataFimPagamento - dataCorrente;
 
 			//String msg = "Vencimento em " + TimeSpanHumanizeExtensions.Humanize(diferenca);
 
@@ -21,21 +22,25 @@ namespace ByteBank.SistemaAgencia
 			//TrocarValoresDeDuasVariaveis(5, 7);
 			//LerUmNumeroInteiroERetornarNotasPossiveis(576);
 
-			string urlParametros = "https://www.bytebank.com.br/cambio?moedaOrigem=real&moedaDestino=dolar";
-			string urlTeste = "https://www.bytebank.com.br/cambio";
-			ExtratorValorDeArgumentosUrl extratorValorDeArgumentosUrl = new ExtratorValorDeArgumentosUrl(urlParametros);
+			//string urlParametros = "https://www.bytebank.com.br/cambio?moedaOrigem=real&moedaDestino=dolar";
+			//string urlTeste = "https://www.bytebank.com.br/cambio";
+			//ExtratorValorDeArgumentosUrl extratorValorDeArgumentosUrl = new ExtratorValorDeArgumentosUrl(urlParametros);
 
-			string valor2 = extratorValorDeArgumentosUrl.ObterValoresDosAgumentos("moedaOrigem");
-			Console.WriteLine("Valor de moedaOrigem: " + valor2);
+			//string valor2 = extratorValorDeArgumentosUrl.ObterValoresDosAgumentos("moedaOrigem");
+			//Console.WriteLine("Valor de moedaOrigem: " + valor2);
 
-			string valor = extratorValorDeArgumentosUrl.ObterValoresDosAgumentos("moedaDestino");
-			Console.WriteLine("Valor de moedaDestino: " + valor);
+			//string valor = extratorValorDeArgumentosUrl.ObterValoresDosAgumentos("moedaDestino");
+			//Console.WriteLine("Valor de moedaDestino: " + valor);
 
-			Console.WriteLine("");
+			//Console.WriteLine("");
 
-			Console.WriteLine(urlTeste.StartsWith("https://www.bytebank.com"));
-			Console.WriteLine(urlTeste.EndsWith("cambio"));
-			Console.WriteLine(urlTeste.Contains("bytebank"));
+			//Console.WriteLine(urlTeste.StartsWith("https://www.bytebank.com"));
+			//Console.WriteLine(urlTeste.EndsWith("cambio"));
+			//Console.WriteLine(urlTeste.Contains("bytebank"));
+
+			ContaCorrente contaCorrente = new ContaCorrente(2525, 3669);
+
+			Console.WriteLine(contaCorrente);
 
 			Console.WriteLine("");
 			Console.ReadLine();

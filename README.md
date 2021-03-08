@@ -38,9 +38,17 @@ Curso de C# e Orientação a Objetos da Alura, abaixo os tópicos abordados por 
 - Documentando
 - NuGet
 
-## C# parte 6: Strings, expressões regulares e a classe Object
+## :heavy_check_mark: C# parte 6: Strings, expressões regulares e a classe Object
 - Aprenda a manipular strings no C#
 - Use os métodos IndexOf, Substring, Contains e outros da classe String
 - Use expressões regulares
 - Conheça a classe Regex
 - Use os métodos da classe Object
+
+## C# parte 7: Array e tipos genéricos
+- Conheça os arrays
+- Crie uma lista dinâmica
+- Use tipos genéricos
+- Aprenda como usar o argumentos params
+- Use Argumentos opcionais e nomeados
+- Crie indexadores em classes

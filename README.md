@@ -45,10 +45,18 @@ Curso de C# e Orientação a Objetos da Alura, abaixo os tópicos abordados por 
 - Conheça a classe Regex
 - Use os métodos da classe Object
 
-## C# parte 7: Array e tipos genéricos
+## :heavy_check_mark: C# parte 7: Array e tipos genéricos
 - Conheça os arrays
 - Crie uma lista dinâmica
 - Use tipos genéricos
 - Aprenda como usar o argumentos params
 - Use Argumentos opcionais e nomeados
 - Crie indexadores em classes
+
+## C# parte 8: List, lambda, linq
+- Conheça tipo genérico List e seus métodos
+- Aprenda as principais formas de ordenar listas
+- Crie métodos de extensão genéricos
+- Simplifique seu código com o VAR
+- Conheça expressões lambda
+- Conheça o Linq

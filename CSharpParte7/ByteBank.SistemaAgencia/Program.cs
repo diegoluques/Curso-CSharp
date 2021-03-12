@@ -30,6 +30,15 @@ namespace ByteBank.SistemaAgencia
 			Console.ReadLine();
 		}
 
+		private void Remover(ContaCorrente item)
+		{
+			int indiceItem = -1;
+			for (int i = 0; i < _proximaPosicao; i++)
+			{
+				
+			}
+		}
+
 		static void TestaArrayDeContaCorrente()
 		{
 			ContaCorrente[] contas = new ContaCorrente[]

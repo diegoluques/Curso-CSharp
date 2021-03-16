@@ -1,4 +1,6 @@
 ﻿using ByteBank.Extensoes;
+using ByteBank.Modelos;
+using ByteBank.Modelos.Funcionarios;
 using System;
 using System.Collections.Generic;
 
@@ -11,8 +13,16 @@ namespace ByteBank
 			ListaDeInteiros();
 			Console.WriteLine("");
 			ListaDeStrings();
+			Console.WriteLine("");
+			DeclararVariavelComVar();
 
 			Console.ReadLine();
+		}
+
+		private static void DeclararVariavelComVar()
+		{
+			var conta = new ContaCorrente(2525, 448898);
+			var diretor = new GerenteDeConta("000.000.00-00");
 		}
 
 		private static void ListaDeInteiros()

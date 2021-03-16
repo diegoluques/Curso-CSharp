@@ -1,6 +1,4 @@
 ﻿using ByteBank.Extensoes;
-using ByteBank.Modelos;
-using ByteBank.Modelos.Funcionarios;
 using System;
 using System.Collections.Generic;
 
@@ -21,8 +19,8 @@ namespace ByteBank
 
 		private static void DeclararVariavelComVar()
 		{
-			var conta = new ContaCorrente(2525, 448898);
-			var diretor = new GerenteDeConta("000.000.00-00");
+			//var conta = new ContaCorrente(2525, 448898);
+			//var diretor = new GerenteDeConta("000.000.00-00");
 		}
 
 		private static void ListaDeInteiros()
@@ -42,14 +40,14 @@ namespace ByteBank
 
 		private static void ListaDeStrings()
 		{
-			List<string> idades = new List<string>();
+			List<string> nome = new List<string>();
 
 			//ListExtensoes.AdicionarVarios(idades, "A", "B", "C", "D", "E");
-			idades.AdicionarVarios("A", "B", "C", "D", "E");
-
-			for (int i = 0; i < idades.Count; i++)
+			nome.AdicionarVarios("A", "B", "C", "D", "E", "Z", "P");
+			nome.Sort();
+			for (int i = 0; i < nome.Count; i++)
 			{
-				Console.WriteLine(idades[i]);
+				Console.WriteLine(nome[i]);
 			}
 		}
 	}

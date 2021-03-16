@@ -34,7 +34,8 @@ namespace ByteBank
 		{
 			List<string> idades = new List<string>();
 
-			ListExtensoes.AdicionarVarios(idades, "A", "B", "C", "D", "E");
+			//ListExtensoes.AdicionarVarios(idades, "A", "B", "C", "D", "E");
+			idades.AdicionarVarios("A", "B", "C", "D", "E");
 
 			for (int i = 0; i < idades.Count; i++)
 			{

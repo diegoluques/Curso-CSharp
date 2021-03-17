@@ -19,7 +19,10 @@ namespace ByteBank
 			Console.WriteLine("Lista ordenada: ");
 			CriarListaDeContaCorrente();
 			Console.WriteLine("");
+			Console.WriteLine("Lista de meses: ");
+			ListaDeMeses();
 
+			Console.WriteLine("");
 			Console.ReadLine();
 		}
 
@@ -27,6 +30,22 @@ namespace ByteBank
 		{
 			//var conta = new ContaCorrente(2525, 448898);
 			//var diretor = new GerenteDeConta("000.000.00-00");
+		}
+
+		private static void ListaDeMeses()
+		{
+			var meses = new List<string>()
+			{   "janeiro", "fevereiro", "março", "abril",
+				"maio", "junho", "julho", "agosto", "setembro",
+				"outubro", "novembro", "dezembro"
+			};
+
+			meses.OrderBy(m => m);
+
+			foreach (var mes in meses)
+			{
+				Console.WriteLine($"Mês {mes}");
+			}
 		}
 
 		private static void CriarListaDeContaCorrente()
@@ -42,18 +61,13 @@ namespace ByteBank
 				null
 			};
 
-			IOrderedEnumerable<ContaCorrente> contasOrdenadas = contaCorrentes.OrderBy(conta =>
-			{
-				if (conta == null)
-					return int.MaxValue;
+			var contasNaoNulas = contaCorrentes.Where(conta => conta != null);
 
-				return conta.Agencia;
-			});
+			IOrderedEnumerable<ContaCorrente> contasOrdenadas = contasNaoNulas.OrderBy(conta => conta.Agencia);
 
 			foreach (var conta in contasOrdenadas)
 			{
-				if (conta != null)
-					Console.WriteLine($"Conta Número {conta.Agencia}, Ag. {conta.Numero}");
+				Console.WriteLine($"Conta Número {conta.Agencia}, Ag. {conta.Numero}");
 			}
 		}
 

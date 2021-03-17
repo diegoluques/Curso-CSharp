@@ -1,4 +1,5 @@
 ﻿using ByteBank.Extensoes;
+using ByteBank.Modelos;
 using System;
 using System.Collections.Generic;
 
@@ -13,6 +14,9 @@ namespace ByteBank
 			ListaDeStrings();
 			Console.WriteLine("");
 			DeclararVariavelComVar();
+			Console.WriteLine("");
+			CriarListaDeContaCorrente();
+			Console.WriteLine("");
 
 			Console.ReadLine();
 		}
@@ -21,6 +25,16 @@ namespace ByteBank
 		{
 			//var conta = new ContaCorrente(2525, 448898);
 			//var diretor = new GerenteDeConta("000.000.00-00");
+		}
+
+		private static void CriarListaDeContaCorrente()
+		{
+			List<ContaCorrente> contaCorrentes = new List<ContaCorrente>();
+			
+			foreach (var conta in contaCorrentes)
+			{
+				Console.WriteLine($"Conta Número {conta.Numero}, Ag. {conta.Agencia}");
+			}
 		}
 
 		private static void ListaDeInteiros()

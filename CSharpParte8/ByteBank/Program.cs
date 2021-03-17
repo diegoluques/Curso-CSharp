@@ -61,9 +61,7 @@ namespace ByteBank
 				null
 			};
 
-			var contasNaoNulas = contaCorrentes.Where(conta => conta != null);
-
-			IOrderedEnumerable<ContaCorrente> contasOrdenadas = contasNaoNulas.OrderBy(conta => conta.Agencia);
+			var contasOrdenadas = contaCorrentes.Where(conta => conta != null).OrderBy(conta => conta.Agencia);
 
 			foreach (var conta in contasOrdenadas)
 			{

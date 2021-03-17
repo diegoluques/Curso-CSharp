@@ -53,10 +53,17 @@ Curso de C# e Orientação a Objetos da Alura, abaixo os tópicos abordados por 
 - Use Argumentos opcionais e nomeados
 - Crie indexadores em classes
 
-## C# parte 8: List, lambda, linq
+## :heavy_check_mark: C# parte 8: List, lambda, linq
 - Conheça tipo genérico List e seus métodos
 - Aprenda as principais formas de ordenar listas
 - Crie métodos de extensão genéricos
 - Simplifique seu código com o VAR
 - Conheça expressões lambda
 - Conheça o Linq
+
+## C# parte 9: C# Parte 9: Entrada e saída (I/O) com streams
+- Abra e crie arquivos com C#
+- Compreenda o que é encoding, UTF8, Unicode, ASCII e outros
+- Use buffers para lidar com fluxo de dados
+- Crie arquivos binários
+- Conheça a classe File

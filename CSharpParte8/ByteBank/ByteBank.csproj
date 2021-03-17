@@ -50,5 +50,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CSharpParte7\ByteBank.Modelos\ByteBank.Modelos.csproj">
+      <Project>{c2175f0d-7024-465e-947f-c0fb51887a9c}</Project>
+      <Name>ByteBank.Modelos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CSharpParte7\ByteBank.SistemaAgencia\ByteBank.SistemaAgencia.csproj">
+      <Project>{2c9c301e-5b56-4195-8662-30c84e970ec8}</Project>
+      <Name>ByteBank.SistemaAgencia</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

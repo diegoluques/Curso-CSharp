@@ -2,6 +2,7 @@
 using ByteBank.Modelos;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ByteBank
 {
@@ -15,6 +16,7 @@ namespace ByteBank
 			Console.WriteLine("");
 			DeclararVariavelComVar();
 			Console.WriteLine("");
+			Console.WriteLine("Lista ordenada: ");
 			CriarListaDeContaCorrente();
 			Console.WriteLine("");
 
@@ -29,11 +31,21 @@ namespace ByteBank
 
 		private static void CriarListaDeContaCorrente()
 		{
-			List<ContaCorrente> contaCorrentes = new List<ContaCorrente>();
-			
-			foreach (var conta in contaCorrentes)
+			var contaCorrentes = new List<ContaCorrente>() {
+				new ContaCorrente(1,9871),
+				new ContaCorrente(5,3855),
+				new ContaCorrente(6,1513),
+				new ContaCorrente(2,9996),
+				new ContaCorrente(4,1111),
+				new ContaCorrente(3,3159),
+				new ContaCorrente(0,1561)
+			};
+
+			IOrderedEnumerable<ContaCorrente> contasOrdenadas = contaCorrentes.OrderBy(conta => conta.Agencia);
+
+			foreach (var conta in contasOrdenadas)
 			{
-				Console.WriteLine($"Conta Número {conta.Numero}, Ag. {conta.Agencia}");
+				Console.WriteLine($"Conta Número {conta.Agencia}, Ag. {conta.Numero}");
 			}
 		}
 

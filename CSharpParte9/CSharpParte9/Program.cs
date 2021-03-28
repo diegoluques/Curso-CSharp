@@ -1,41 +1,26 @@
 ﻿using System;
 using System.IO;
-using System.Text;
 
 namespace CSharpParte9
 {
-	class Program
+	partial class Program
 	{
 		static void Main(string[] args)
 		{
-			var enderecoDoArquivo = "contas.txt";
+			//LidandoComStreamDiretamente();
 
+			var enderecoDoArquivo = "contas.txt";
 			using (var fluxoDoArquivo = new FileStream(path: enderecoDoArquivo, mode: FileMode.Open))
+			using (var leitor = new StreamReader(fluxoDoArquivo))
 			{
-				var buffer = new byte[1024]; //1kb
-				var numeroDeBytesLidos = -1;
-				while (numeroDeBytesLidos != 0)
+				while (!leitor.EndOfStream)
 				{
-					numeroDeBytesLidos = fluxoDoArquivo.Read(array: buffer, offset: 0, count: 1024);
-					EscreverBuffer(buffer, numeroDeBytesLidos);
+					var linha = leitor.ReadLine();
+					Console.WriteLine(linha);
 				}
 			}
-
 			Console.Write("");
 			Console.ReadLine();
-		}
-
-		static void EscreverBuffer(byte[] buffer, int bytesLidos)
-		{
-			var utf8 = Encoding.Default;
-			var texto = utf8.GetString(buffer, 0, bytesLidos);
-			Console.WriteLine(texto);
-
-			//foreach (var meuByte in buffer)
-			//{
-			//	Console.Write(meuByte);
-			//	Console.Write("-");
-			//}
 		}
 	}
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace CSharpParte9
 {
@@ -11,7 +12,13 @@ namespace CSharpParte9
 			//TestarEscrita();
 			//StreamBinario();
 			//LeituraBinaria();
-			UsandoStreamDeEntradaDaConsole();
+			//UsandoStreamDeEntradaDaConsole();
+
+			var linhas = File.ReadAllLines("contas.txt");
+			var bytesDoArquivo = File.ReadAllBytes("contas.txt");
+
+			File.WriteAllText("nomeArquivo.txt", "Deu certo");
+
 			Console.Write("");
 			Console.ReadLine();
 		}

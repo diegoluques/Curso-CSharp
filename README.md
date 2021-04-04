@@ -61,7 +61,7 @@ Curso de C# e Orientação a Objetos da Alura, abaixo os tópicos abordados por 
 - Conheça expressões lambda
 - Conheça o Linq
 
-## C# parte 9: C# Parte 9: Entrada e saída (I/O) com streams
+## :heavy_check_mark: C# parte 9: C# Parte 9: Entrada e saída (I/O) com streams
 - Abra e crie arquivos com C#
 - Compreenda o que é encoding, UTF8, Unicode, ASCII e outros
 - Use buffers para lidar com fluxo de dados

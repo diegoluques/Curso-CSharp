@@ -7,7 +7,8 @@ namespace CSharpParte9
 		static void Main(string[] args)
 		{
 			//CriarArquivo();
-			CriarArquivoComWriter();
+			//CriarArquivoComWriter();
+			TestarEscrita();
 			Console.Write("");
 			Console.ReadLine();
 		}

@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Text;
 
 namespace CSharpParte9
@@ -32,6 +33,27 @@ namespace CSharpParte9
 				using (var escritor = new StreamWriter(fluxoDeArquivo))
 				{
 					escritor.WriteLine(contaComoString);
+				}
+			}
+		}
+
+		static void TestarEscrita()
+		{
+			var caminhoDoArquivo = "teste.txt";
+
+			using (var fluxoDeArquivo = new FileStream(caminhoDoArquivo, FileMode.Create))
+			{
+				using (var escritor = new StreamWriter(fluxoDeArquivo))
+				{
+					for (int i = 0; i < 100000; i++)
+					{
+						escritor.WriteLine($"Linha {i}");
+
+						escritor.Flush(); //Despeja o byffer para o Stream
+
+						Console.WriteLine($"Linha {i} foi escrita no arquivo. Tecle enter para adicionar mais uma");
+						Console.ReadLine();
+					}
 				}
 			}
 		}

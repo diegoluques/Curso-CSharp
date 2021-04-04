@@ -30,7 +30,7 @@ namespace CSharpParte9
 
 		static ContaCorrente ConverterStringParaContaCorrente(string linha)
 		{
-			string[] campos = linha.Split(' ');
+			string[] campos = linha.Split(';');
 
 			var agencia = campos[0];
 			var numero = campos[1];

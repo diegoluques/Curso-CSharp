@@ -8,7 +8,9 @@ namespace CSharpParte9
 		{
 			//CriarArquivo();
 			//CriarArquivoComWriter();
-			TestarEscrita();
+			//TestarEscrita();
+			//StreamBinario();
+			LeituraBinaria();
 			Console.Write("");
 			Console.ReadLine();
 		}

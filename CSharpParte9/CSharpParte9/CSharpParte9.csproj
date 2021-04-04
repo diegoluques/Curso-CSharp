@@ -51,6 +51,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StreamBinario.cs" />
     <Compile Include="UsandoStramReader.cs" />
+    <Compile Include="UsandoStreamDeEntradaDaConsole.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -10,7 +10,8 @@ namespace CSharpParte9
 			//CriarArquivoComWriter();
 			//TestarEscrita();
 			//StreamBinario();
-			LeituraBinaria();
+			//LeituraBinaria();
+			UsandoStreamDeEntradaDaConsole();
 			Console.Write("");
 			Console.ReadLine();
 		}
